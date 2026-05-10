@@ -18,17 +18,14 @@ app.use(cors({
 
 app.use(express.json())
 
-// ROUTES
 app.use("/api/auth", authRoutes)
 app.use("/api/invoice", invoiceRoutes)
 app.use("/api/payment", paymentRoutes)
 
-// ROOT
 app.get("/", (req, res) => {
   res.send("API RUNNING 🚀")
 })
 
-// START SERVER
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
