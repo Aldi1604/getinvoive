@@ -21,7 +21,7 @@ function CreateInvoice() {
   const handleSubmit = async () => {
     const total = items.reduce((sum, item) => sum + item.price, 0)
 
-    await fetch("http://localhost:5000/api/invoice", {
+    await fetch("http://getinvoive-production.up.railway.app/api/invoice", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

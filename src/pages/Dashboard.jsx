@@ -18,7 +18,7 @@ function Dashboard() {
   useEffect(() => {
   const refreshUser = async () => {
     try {
-      const res = await fetch(`https://getinvoice.my.id/api/auth/me?userId=${user.id}`)
+      const res = await fetch(`https://getinvoive-production.up.railway.app/api/auth/me?userId=${user.id}`)
       const data = await res.json()
 
       // cek kalau berubah jadi premium
@@ -73,7 +73,7 @@ function Dashboard() {
               onClick={async () => {
                 try {
                   const res = await fetch(
-                    "https://getinvoice.my.id/api/payment/create",
+                    "https://getinvoive-production.up.railway.app/api/payment/create",
                     {
                       method: "POST",
                       headers: {

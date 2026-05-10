@@ -13,7 +13,7 @@ function InvoiceDetail() {
   useEffect(() => {
     const fetchInvoice = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/invoice/${id}`)
+        const res = await fetch(`http://getinvoive-production.up.railway.app/api/invoice/${id}`)
         const data = await res.json()
         setInvoice(data)
       } catch (err) {
