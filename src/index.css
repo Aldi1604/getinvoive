@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pdf-mode {
+    background: white !important;
+    color: black !important;
+}
+
+.pdf-mode * {
+    color: black !important;
+    border-color: #add !important;
+}
